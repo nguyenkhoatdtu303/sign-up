@@ -8,7 +8,13 @@
 </head>
 <body>
     <div class="main">
-        <div class="side-bar"></div>
+        <div class="side-bar">
+            <div class="logo-container">
+                <img src="images/logo.png" alt="">
+                <span class="logo">ODIN</span>
+            </div>
+            <img src="images/background.jpg" alt="">
+        </div>
         <div class="signup-container">
             <div class="infor">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quasi necessitatibus beatae facere optio! Ipsa inventore maxime libero voluptate placeat perspiciatis illo animi nostrum hic consectetur accusamus, dolore in ex.</p>
@@ -17,31 +23,32 @@
             <div class="sign-up">
                 <h2 class="title">Let's do this!</h2>
                 <form action="/server/" method="get" class="signup-form">
-                    <div class="form-section">
-                        <label class="form-label" for="first">FIRST NAME</label>
-                        <input type="text" name="first-name" id="first">
+                    <div class="user-information">
+                        <div class="form-section">
+                            <label class="form-label" for="first">FIRST NAME</label>
+                            <input type="text" name="first-name" id="first">
+                        </div>
+                        <div class="form-section">
+                            <label class="form-label" for="last">LAST NAME</label>
+                            <input type="text" name="last-name" id="last">
+                        </div>
+                        <div class="form-section">
+                            <label class="form-label" for="email">EMAIL</label>
+                            <input type="email" name="email" id="email">
+                        </div>
+                        <div class="form-label" class="form-section">
+                            <label class="form-label" for="phone-number">PHONE NUMBER</label>
+                            <input type="tel" id="phone-number" name="phone-number">
+                        </div>
+                        <div class="form-section">
+                            <label class="form-label" for="password">PASSWORD</label>
+                            <input type="password" id="password" name="password">
+                        </div>
+                        <div class="form-section">
+                            <label class="form-label" for="conform">CONFIRM PASSWORD</label>
+                            <input type="password" name="confirm-password" id="confirm">
+                        </div>
                     </div>
-                    <div class="form-section">
-                        <label class="form-label" for="last">LAST NAME</label>
-                        <input type="text" name="last-name" id="last">
-                    </div>
-                    <div class="form-section">
-                        <label class="form-label" for="email">EMAIL</label>
-                        <input type="email" name="email" id="email">
-                    </div>
-                    <div class="form-label" class="form-section">
-                        <label for="phone-number">PHONE NUMBER</label>
-                        <input type="tel" id="phone-number" name="phone-number">
-                    </div>
-                    <div class="form-section">
-                        <label class="form-label" for="password">PASSWORD</label>
-                        <input type="password" id="password" name="password">
-                    </div>
-                    <div class="form-section">
-                        <label class="form-label" for="conform">CONFIRM PASSWORD</label>
-                        <input type="password" name="confirm-password" id="confirm">
-                    </div>
-                    
                     <div class="submit">
                         <button type="submit" class="create-acc">Create Account</button>
                         <p>Lorem ipsum dolor.</p>
