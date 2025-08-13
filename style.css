@@ -1,0 +1,41 @@
+@font-face {
+    font-family: "logo-font";
+    src: url("fonts/Norse-Bold.otf");
+    font-weight: bold;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    display: flex;
+    width: 80%;
+    height: 100vh;
+    background-color: white;
+    margin: 0 auto;
+
+}
+
+div {
+    border: 1px solid black;
+}
+
+.main .side-bar {
+    height: inherit;
+    width: 30%;
+}
+
+.signup-container {
+    height: inherit;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+}
