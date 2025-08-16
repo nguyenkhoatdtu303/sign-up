@@ -17,7 +17,7 @@ body {
 .main {
     display: flex;
     width: 80%;
-    height: 100vh;
+    height: 120vh;
     margin: 0 auto;
 }
 
@@ -57,12 +57,13 @@ body {
     width: 70%;
     display: flex;
     flex-direction: column;
-    padding: 100px 40px;
-    background-color: white;
+    padding: 100px 0px;
+    background-color: #f6f6f7;
 }
 
 .infor {
     width: 80%;
+    padding: 20px 40px;
 }
 
 p {
@@ -77,6 +78,12 @@ h2,p {
 .form-label {
     display: block;
     margin-bottom: 10px;
+}
+
+.sign-up {
+    background-color: white;
+    padding: 20px 40px;
+    box-shadow: 0 5px 10px -5px rgb(0,0,0,0.5);
 }
 
 .signup-form {
@@ -97,7 +104,7 @@ input {
     width: 240px;
     line-height: 1.6rem;
     border-radius: 5px;
-    border: 1px solid rgb(163, 163, 163);
+    border: 1px solid #E5E7EB;
 }
 
 button {
@@ -110,6 +117,15 @@ button {
     border-radius: 5px;
 }
 
+button:hover {
+    background-color: #9cbe7f;
+    cursor: pointer;
+}
+
+.submit {
+    padding: 20px 40px;  
+}
+
 .submit a{
     text-decoration: none;
     color: #596D48;    
@@ -119,17 +135,21 @@ button {
     color: #9cbe7f;
 }
 input:focus {
-    border: 2px solid blue;
-    box-shadow: 1px 1px 6px red;
+    outline: 1.5px solid blue;
+    box-shadow: 1px 1px 10px black;
 }
 
 input[type="password"]:invalid {
-    border: 2px solid red;
+    outline: 1.5px solid rgb(221, 42, 42);
+}
+
+input[type="password"]:focus {
+    outline: 1.5px solid blue;
 }
 
 .credit {
     position: absolute;
-    bottom: 5%;
+    bottom: -10%;
     left: 14%;
     color: white;
 
